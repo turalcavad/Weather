@@ -79,12 +79,17 @@ body {
 }
 
 .weather-bottom {
+  display: none;
   color: #ffe3e3;
 }
 
 .weather-bottom h2 {
   font-size: 2rem;
   padding: 10px;
+}
+
+.active {
+  display: block;
 }
 
 .country {
@@ -94,5 +99,20 @@ body {
 
 .weather-description {
   text-transform: capitalize;
+}
+
+.details-button {
+  padding: 15px 60px;
+  background-color: #0b3c5d;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.details-button:hover {
+  background-color: #0a3654;
 }
 /*# sourceMappingURL=main.css.map */
