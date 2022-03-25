@@ -22,10 +22,38 @@
 			integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
 			crossorigin="anonymous"
 		/>
-        <!-- css -->
+		<!-- css -->
 		<link rel="stylesheet" href="./assets/styles/main.css" />
 	</head>
 	<body>
-        
-    </body>
+		<section class="content-wrapper">
+			<div class="container">
+				<div class="weather-top">
+					<h1>Weather Forecast</h1>
+					<input
+						class="searchbar"
+						type="text"
+						placeholder="Enter a city name"
+					/>
+				</div>
+
+				<div class="weather-bottom">
+					<h2 class="city-name">Baku,<span class="country">AZ</span></h2>
+					<h2 class="temperature">25°C</h2>
+					<h2 class="weather-description">Cloudy</h2>
+					<h2>Humidity: <span class="humidity"></span></h2>
+					<h2>Wind: <span class="wind"></span></h2>
+				</div>
+			</div>
+		</section>
+
+		<!-- jquery -->
+		<script
+			src="https://code.jquery.com/jquery-3.6.0.min.js"
+			integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+			crossorigin="anonymous"
+		></script>
+
+		<script src="./assets/js/weather.js"></script>
+	</body>
 </html>
