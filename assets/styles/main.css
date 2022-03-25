@@ -79,8 +79,13 @@ body {
 }
 
 .weather-bottom {
-  display: none;
+  overflow: hidden;
+  height: 0;
+  visibility: hidden;
+  opacity: 0;
   color: #ffe3e3;
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
 }
 
 .weather-bottom h2 {
@@ -89,7 +94,9 @@ body {
 }
 
 .active {
-  display: block;
+  visibility: visible;
+  opacity: 1;
+  height: auto;
 }
 
 .country {
@@ -103,6 +110,7 @@ body {
 
 .details-button {
   padding: 15px 60px;
+  margin-top: 15px;
   background-color: #0b3c5d;
   color: #fff;
   border: none;
